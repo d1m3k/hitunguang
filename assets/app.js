@@ -295,7 +295,7 @@ function hitungKendaraan() {
     '<dl class="rincian">' + row('Pokok kredit (harga − DP)', rp(pokok)) + row('Total bunga flat', rp(bungaTotal)) +
     row('Biaya admin + provisi', rp(biaya)) + row('Total biaya kredit (bunga + biaya)', rp(totalBiaya)) +
     row('Total keseluruhan (DP + semua cicilan + biaya)', rp(totalSemua), 'total') + '</dl>' +
-    '<p style="font-size:.92rem">Peringatan: bunga flat terlihat kecil, tetapi bunga efektifnya jauh lebih tinggi karena bunga selalu dihitung dari pokok awal. Bandingkan dengan <a href="cicilan.html" style="color:#EFE3B8">Kalkulator Cicilan metode anuitas</a>.</p>';
+    '<p style="font-size:.92rem">Peringatan: bunga flat terlihat kecil, tetapi bunga efektifnya jauh lebih tinggi karena bunga selalu dihitung dari pokok awal. Bandingkan dengan <a href="cicilan" style="color:#EFE3B8">Kalkulator Cicilan metode anuitas</a>.</p>';
 }
 /* ---------- Tujuan keuangan ---------- */
 function setoranBulanan(target, modalAwal, retTahunan, tahun) {
