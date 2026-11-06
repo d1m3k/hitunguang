@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Tujuan Keuangan — Setoran Bulanan untuk Target Dana | HitungUang</title>
+<meta name="description" content="Hitung setoran bulanan yang dibutuhkan untuk mencapai target dana dalam waktu tertentu, dengan modal awal dan asumsi return investasi Anda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Tujuan Keuangan</p>
+  <div class="page-head"><h1>Kalkulator Tujuan Keuangan</h1><p>Balik cara berpikirnya: tentukan dulu target dan tenggatnya — untuk rumah, kendaraan, atau modal usaha — lalu kalkulator ini menghitung setoran bulanan yang dibutuhkan.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="tuj-target">Target dana (Rp)</label><input type="number" id="tuj-target" value="500000000" step="any"></div>
+<div class="field"><label for="tuj-tahun">Waktu mencapai target (tahun)</label><input type="number" id="tuj-tahun" value="10" step="any"></div>
+<div class="field"><label for="tuj-return">Asumsi return (% per tahun)</label><input type="number" id="tuj-return" value="6" step="any"></div>
+<div class="field"><label for="tuj-modal">Modal awal yang sudah ada (Rp)</label><input type="number" id="tuj-modal" value="50000000" step="any"></div>
+<button class="btn" type="button" id="tuj-hitung">Hitung</button></form></div>
+<div class="result" id="tuj-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Target <strong>Rp500.000.000</strong> dalam <strong>10 tahun</strong>, return 6%/tahun, modal awal Rp50.000.000: modal awal tumbuh menjadi ≈ Rp90.969.837, sisanya ditutup setoran <strong>Rp2.495.923 per bulan</strong>. Total uang yang Anda setor ≈ Rp349.510.710; sisanya ≈ Rp150.489.290 berasal dari pertumbuhan.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Setoran = (Target − Modal × (1+r)<sup>n</sup>) ÷ (((1+r)<sup>n</sup> − 1) ÷ r)</div><p>r adalah return bulanan dan n jumlah bulan; setoran diasumsikan di akhir tiap bulan. Return nyata berfluktuasi — pakai asumsi konservatif dan tinjau ulang setoran Anda berkala. Makin awal mulai, makin kecil setoran bulanannya karena pertumbuhan bekerja lebih lama.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Return berapa yang sebaiknya saya pakai?</summary><p>Sesuai instrumen rencana Anda, dan sebaiknya konservatif: angka lebih rendah menghasilkan setoran lebih besar tetapi target lebih aman tercapai.</p></details>
+<details><summary>Bagaimana bila targetnya kurang dari 1 tahun?</summary><p>Isi tahun sebagai desimal, misalnya 0,5 untuk enam bulan. Pada jangka sangat pendek, return hampir tidak berpengaruh dan setoran mendekati target dibagi bulan.</p></details>
+<details><summary>Apakah inflasi diperhitungkan?</summary><p>Tidak langsung. Bila target Anda harga barang di masa depan (misalnya harga rumah), naikkan angka targetnya terlebih dahulu sebesar perkiraan kenaikan harga.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

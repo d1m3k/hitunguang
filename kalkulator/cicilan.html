@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Cicilan Kredit — Anuitas & Flat | HitungUang</title>
+<meta name="description" content="Hitung cicilan kredit umum per bulan dengan metode anuitas atau flat: kendaraan, elektronik, dan pinjaman. Lihat total bunga dan total pembayaran Anda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Cicilan</p>
+  <div class="page-head"><h1>Kalkulator Cicilan</h1><p>Hitung cicilan kredit apa pun — motor, mobil, elektronik, atau pinjaman tunai — dan bandingkan sendiri selisih metode anuitas dan flat sebelum menandatangani apa pun.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form id="form-cicilan" onsubmit="return false">
+<div class="field"><label for="cic-pinjaman">Jumlah pinjaman (Rp)</label><input type="number" id="cic-pinjaman" value="50000000" ></div>
+<div class="field"><label for="cic-bunga">Suku bunga (% per tahun)</label><input type="number" id="cic-bunga" value="12" ><p class="hint">step="0.01"</p></div>
+<div class="field"><label for="cic-tenor">Tenor (bulan)</label><input type="number" id="cic-tenor" value="12" ></div>
+<div class="field"><label for="cic-metode">Metode bunga</label><select id="cic-metode"><option value="anuitas" selected>Anuitas (cicilan tetap, bunga dari sisa pinjaman)</option><option value="flat">Flat (bunga selalu dari pinjaman awal)</option></select><p class="hint">Banyak kredit kendaraan dan pinjaman online memakai metode flat — periksa akad/penawaran Anda.</p></div><button class="btn" type="button" id="cic-hitung">Hitung</button></form></div>
+<div class="result" id="cic-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Pinjaman <strong>Rp50.000.000</strong>, bunga <strong>12% per tahun</strong>, tenor <strong>12 bulan</strong>. Metode <strong>anuitas</strong>: cicilan <strong>Rp4.442.439 per bulan</strong>, total bunga ≈ Rp3.309.268. Metode <strong>flat</strong>: cicilan Rp4.666.667 per bulan, total bunga Rp6.000.000. Selisihnya hampir Rp2,7 juta untuk pinjaman yang sama.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Anuitas: Cicilan = P × r × (1+r)<sup>n</sup> ÷ ((1+r)<sup>n</sup> − 1) &nbsp;·&nbsp; Flat: Bunga total = P × bunga tahunan × (n ÷ 12)</div><p>Pada metode flat, bunga setiap bulan dihitung dari pinjaman awal, tidak peduli sisa pinjaman sudah berkurang — karena itu bunga efektif flat sebenarnya jauh lebih tinggi daripada angka yang tertulis. Pada anuitas, bunga dihitung dari sisa pinjaman sehingga menyusut tiap bulan.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Metode mana yang dipakai kredit saya?</summary><p>Tanyakan dan baca akadnya. Kredit pemilikan rumah dan banyak kredit bank umumnya anuitas; kredit kendaraan dan sebagian pinjaman online sering flat.</p></details>
+<details><summary>Kenapa bunga flat 12% terasa lebih mahal dari anuitas 12%?</summary><p>Karena pada flat, bunga bulan terakhir tetap dihitung dari pinjaman penuh padahal sisa utang tinggal sedikit. Bunga efektifnya bisa mendekati dua kali angka flat.</p></details>
+<details><summary>Apakah ada biaya lain selain bunga?</summary><p>Sering ada: administrasi, provisi, asuransi, dan denda keterlambatan. Kalkulator ini menghitung pokok dan bunga saja.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

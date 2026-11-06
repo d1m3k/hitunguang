@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Dana Darurat — Berapa Target & Berapa Lama? | HitungUang</title>
+<meta name="description" content="Hitung target dana darurat dari pengeluaran bulanan (3, 6, 9, atau 12 bulan), lihat kekurangannya, dan perkirakan berapa bulan target itu tercapai dari tabungan rutin Anda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Dana Darurat</p>
+  <div class="page-head"><h1>Kalkulator Dana Darurat</h1><p>Dana darurat adalah bantalan pertama sebelum investasi: cadangan kas untuk PHK, sakit, atau perbaikan mendesak. Hitung target Anda dan berapa lama mencapainya.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form id="form-dana-darurat" onsubmit="return false">
+<div class="field"><label for="dar-pengeluaran">Pengeluaran per bulan (Rp)</label><input type="number" id="dar-pengeluaran" value="5000000" ></div>
+<div class="field"><label for="dar-target">Target dana darurat</label><select id="dar-target"><option value="3">3 bulan</option><option value="6" selected>6 bulan</option><option value="9">9 bulan</option><option value="12">12 bulan</option></select><p class="hint">Panduan umum: lajang 3–6 bulan pengeluaran; menikah/berkeluarga 6–9 bulan; wiraswasta atau penghasilan tunggal/tidak tetap 9–12 bulan.</p></div><div class="field"><label for="dar-punya">Tabungan dana darurat saat ini (Rp)</label><input type="number" id="dar-punya" value="10000000" ></div>
+<div class="field"><label for="dar-nabung">Kemampuan menabung per bulan (Rp)</label><input type="number" id="dar-nabung" value="2000000" ></div>
+<button class="btn" type="button" id="dar-hitung">Hitung</button></form></div>
+<div class="result" id="dar-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Pengeluaran <strong>Rp5.000.000 per bulan</strong> dengan target <strong>6 bulan</strong> memerlukan dana <strong>Rp30.000.000</strong>. Bila tabungan saat ini Rp10.000.000, kekurangannya Rp20.000.000; menabung Rp2.000.000 per bulan berarti target tercapai dalam <strong>10 bulan</strong>.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Target = Pengeluaran bulanan × jumlah bulan &nbsp;·&nbsp; Waktu = Kekurangan ÷ tabungan per bulan</div><p>Estimasi waktu di kalkulator ini sengaja memakai asumsi tanpa return (0%): target dihitung dari setoran murni. Panduan jumlah bulan: lajang berpenghasilan tetap umumnya 3–6 bulan, berkeluarga 6–9 bulan, dan wiraswasta/penghasilan tunggal 9–12 bulan. Simpan dana darurat di instrumen yang aman dan mudah dicairkan, terpisah dari rekening harian.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Dana darurat sebaiknya disimpan di mana?</summary><p>Di tempat yang aman, stabil, dan cepat dicairkan — misalnya tabungan terpisah atau reksa dana pasar uang. Bukan di instrumen yang nilainya bisa turun saat Anda justru butuh.</p></details>
+<details><summary>Apakah dana darurat sama dengan tabungan biasa?</summary><p>Fungsinya khusus untuk keadaan darurat, jadi idealnya rekeningnya dipisah agar tidak terpakai untuk keinginan.</p></details>
+<details><summary>Setelah target tercapai, apa selanjutnya?</summary><p>Kelebihan setoran dapat diarahkan ke tujuan lain — melunasi utang berbunga tinggi atau mulai berinvestasi sesuai profil risiko Anda.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Pesangon — Tabel PP 35/2021 Pasal 40 | HitungUang</title>
+<meta name="description" content="Estimasi Uang Pesangon dan UPMK menurut tabel PP 35/2021 Pasal 40 berdasarkan masa kerja dan upah, dengan pengali sesuai alasan PHK yang Anda pilih. Estimasi, bukan kepastian hukum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Pesangon</p>
+  <div class="page-head"><h1>Kalkulator Pesangon & UPMK</h1><p>Perkiraan kasar hak pesangon dan uang penghargaan masa kerja (UPMK) bila terjadi PHK — untuk bahan memahami hak Anda, bukan angka final.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="pes-upah">Upah sebulan — pokok + tunjangan tetap (Rp)</label><input type="number" id="pes-upah" value="8000000" step="any"></div>
+<div class="field"><label for="pes-masa">Masa kerja (tahun, boleh desimal)</label><input type="number" id="pes-masa" value="8" step="any"></div>
+<div class="field"><label for="pes-pengali">Pengali Uang Pesangon sesuai alasan PHK (PP 35/2021) — pilih sendiri</label><select id="pes-pengali"><option value="0.5">0,5× — misalnya alasan tertentu seperti kerugian/efisiensi atau pelanggaran setelah SP</option><option value="1" selected>1× — pengali penuh (misalnya PHK karena perusahaan tutup bukan karena rugi, atau alasan standar lain)</option><option value="2">2× — misalnya PHK karena sakit berkepanjangan/kecacatan akibat kecelakaan kerja</option><option value="kustom">Kustom — isi sendiri di bawah</option></select><p class="hint">Daftar ini ringkasan, bukan penetapan: pengali yang benar tergantung alasan PHK spesifik menurut PP 35/2021 dan putusan/perjanjian terkait.</p></div><div class="field"><label for="pes-pengali-kustom">Pengali kustom (hanya dipakai bila memilih Kustom)</label><input type="number" id="pes-pengali-kustom" value="1" step="any"></div>
+<button class="btn" type="button" id="pes-hitung">Hitung</button></form></div>
+<div class="result" id="pes-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div style="margin-top:20px" class="note warn"><strong>Peringatan penting:</strong> angka ini adalah <strong>estimasi dasar</strong> dari tabel PP 35/2021 Pasal 40 — <strong>belum termasuk Uang Penggantian Hak (UPH)</strong>, dan pengali sebenarnya tergantung alasan PHK. Selain itu, <strong>regulasi pesangon di Indonesia sedang dalam masa perubahan</strong> (undang-undang baru 2026; aturan pelaksananya belum terbit), sehingga angka yang berlaku saat PHK Anda terjadi dapat berbeda. Ini <strong>bukan kepastian atau nasihat hukum</strong> — untuk kasus nyata, konsultasikan dengan HR, serikat pekerja, Dinas Ketenagakerjaan, atau advokat.</div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Upah <strong>Rp8.000.000</strong>, masa kerja <strong>8 tahun</strong>, pengali <strong>1×</strong>: Uang Pesangon = 9 bulan upah = <strong>Rp72.000.000</strong>; UPMK = 3 bulan upah = <strong>Rp24.000.000</strong>; total sebelum UPH = <strong>Rp96.000.000</strong>.</p></div>
+<h2>Penjelasan rumus</h2><p><strong>Tabel PP 35/2021 Pasal 40 — Uang Pesangon (bulan upah):</strong> masa kerja &lt;1 tahun: 1; 1–&lt;2: 2; 2–&lt;3: 3; 3–&lt;4: 4; 4–&lt;5: 5; 5–&lt;6: 6; 6–&lt;7: 7; 7–&lt;8: 8; ≥8 tahun: 9. <strong>UPMK (bulan upah):</strong> &lt;3 tahun: 0; 3–&lt;6: 2; 6–&lt;9: 3; 9–&lt;12: 4; 12–&lt;15: 5; 15–&lt;18: 6; 18–&lt;21: 7; 21–&lt;24: 8; ≥24: 10. Masa kerja desimal dibulatkan ke bawah ke tahun penuh. Uang Pesangon dikalikan pengali alasan PHK; UPMK tidak dikalikan.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Apa itu Uang Penggantian Hak (UPH)?</summary><p>Komponen terpisah: antara lain cuti tahunan yang belum diambil dan belum gugur, biaya pulang ke tempat asal penerimaan, dan hal lain yang diatur perjanjian kerja/peraturan perusahaan/PKB. Kalkulator ini belum menghitungnya.</p></details>
+<details><summary>Pengali PHK saya yang benar yang mana?</summary><p>Tergantung alasan PHK persisnya menurut PP 35/2021 (antara lain efisiensi, kerugian, pailit, pelanggaran, sakit, pensiun, meninggal) — masing-masing punya pengali UP dan ketentuan UPMK sendiri. Pilihan di kalkulator ini adalah ringkasan untuk estimasi.</p></details>
+<details><summary>Apakah angka ini bisa dipakai menuntut perusahaan?</summary><p>Tidak sebagai satu-satunya dasar. Regulasi sedang berubah dan fakta kasus (alasan, perjanjian, putusan PHI) menentukan hasil akhir. Gunakan sebagai gambaran awal, lalu konsultasikan ke ahli.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

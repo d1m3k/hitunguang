@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator KPR — Hitung Cicilan Rumah per Bulan | HitungUang</title>
+<meta name="description" content="Hitung cicilan KPR per bulan dengan rumus anuitas: masukkan harga rumah, uang muka, bunga, dan tenor. Dilengkapi total bunga dan tabel amortisasi 12 bulan pertama.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator KPR</p>
+  <div class="page-head"><h1>Kalkulator KPR</h1><p>Perkirakan cicilan rumah per bulan sebelum Anda mengajukan KPR ke bank. Kalkulator ini memakai metode anuitas — cicilan tetap setiap bulan, dengan porsi bunga yang mengecil dan porsi pokok yang membesar seiring waktu.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form id="form-kpr" onsubmit="return false">
+<div class="field"><label for="kpr-harga">Harga rumah (Rp)</label><input type="number" id="kpr-harga" value="500000000" ></div>
+<div class="field"><label for="kpr-dp">Uang muka / DP (Rp)</label><input type="number" id="kpr-dp" value="100000000" ></div>
+<div class="field"><label for="kpr-bunga">Suku bunga (% per tahun)</label><input type="number" id="kpr-bunga" value="7" ><p class="hint">step="0.01"</p></div>
+<div class="field"><label for="kpr-tenor">Tenor (tahun)</label><input type="number" id="kpr-tenor" value="20" ></div>
+<button class="btn" type="button" id="kpr-hitung">Hitung</button></form></div>
+<div class="result" id="kpr-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose" style="max-width:none"><h2>Tabel amortisasi — 12 bulan pertama</h2><div class="table-scroll"><table class="ledger"><thead><tr><th>Bulan</th><th>Cicilan</th><th>Porsi bunga</th><th>Porsi pokok</th><th>Sisa pinjaman</th></tr></thead><tbody id="kpr-tabel-body"></tbody></table></div></div><div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Rumah seharga <strong>Rp500.000.000</strong> dengan uang muka <strong>Rp100.000.000</strong> berarti pinjaman <strong>Rp400.000.000</strong>. Dengan bunga <strong>7% per tahun</strong> dan tenor <strong>20 tahun (240 bulan)</strong>, cicilannya adalah <strong>Rp3.101.196 per bulan</strong>. Total pembayaran pinjaman ≈ Rp744.287.040, sehingga total bunganya ≈ Rp344.287.040.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Cicilan = P × r × (1+r)<sup>n</sup> ÷ ((1+r)<sup>n</sup> − 1)</div><p>P = jumlah pinjaman (harga rumah − uang muka), r = suku bunga bulanan (bunga tahunan ÷ 100 ÷ 12), dan n = jumlah bulan tenor. Setiap bulan, bunga dihitung dari sisa pinjaman, sisanya dari cicilan mengurangi pokok — itulah isi tabel amortisasi di atas.</p><p>Catatan: KPR nyata dapat memakai bunga tetap (fixed) di tahun-tahun awal lalu mengambang (floating), serta biaya provisi, administrasi, asuransi, dan notaris yang tidak termasuk di kalkulator ini.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Apakah cicilan KPR selalu tetap setiap bulan?</summary><p>Dengan metode anuitas dan bunga tetap, ya. Pada KPR berbunga floating, cicilan dapat berubah mengikuti suku bunga yang berlaku.</p></details>
+<details><summary>Lebih baik tenor panjang atau pendek?</summary><p>Tenor panjang membuat cicilan bulanan lebih ringan tetapi total bunga jauh lebih besar. Tenor pendek sebaliknya: cicilan berat, total bunga hemat.</p></details>
+<details><summary>Apakah hasil ini sama dengan penawaran bank?</summary><p>Tidak selalu. Bank dapat memakai asumsi bunga, biaya, dan pembulatan berbeda. Gunakan hasil ini sebagai perkiraan awal untuk membandingkan penawaran.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

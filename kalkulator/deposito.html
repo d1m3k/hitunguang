@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Deposito — Bunga Bersih Setelah Pajak 20% | HitungUang</title>
+<meta name="description" content="Hitung bunga deposito bersih: bunga bruto, PPh final 20% atas bunga, total diterima saat jatuh tempo, dan yield efektif setelah pajak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Deposito</p>
+  <div class="page-head"><h1>Kalkulator Deposito</h1><p>Deposito terlihat sederhana, tetapi bunga yang Anda terima dipotong PPh final 20%. Hitung bunga bersih dan yield efektifnya sebelum membandingkan penawaran antarbank.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="dep-pokok">Pokok deposito (Rp)</label><input type="number" id="dep-pokok" value="100000000" step="any"></div>
+<div class="field"><label for="dep-bunga">Bunga deposito (% per tahun)</label><input type="number" id="dep-bunga" value="5.5" step="any"></div>
+<div class="field"><label for="dep-tenor">Tenor (bulan)</label><input type="number" id="dep-tenor" value="12" step="any"></div>
+<button class="btn" type="button" id="dep-hitung">Hitung</button></form></div>
+<div class="result" id="dep-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Pokok <strong>Rp100.000.000</strong>, bunga <strong>5,5% per tahun</strong>, tenor <strong>12 bulan</strong>: bunga bruto = Rp100.000.000 × 5,5% × 12/12 = <strong>Rp5.500.000</strong>. PPh final 20% = Rp1.100.000, bunga bersih <strong>Rp4.400.000</strong>, total diterima <strong>Rp104.400.000</strong>, dan yield efektif setelah pajak 4,4% per tahun.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Bunga bruto = Pokok × tarif × (bulan ÷ 12) · Bunga bersih = Bunga bruto − 20% × Bunga bruto</div><p>PPh atas bunga deposito adalah final sebesar 20% (PP 131/2000 jo. PP 123/2015). <strong>Pengecualian:</strong> bila total simpanan Anda di bank tersebut tidak melebihi Rp7.500.000, bunga tidak dikenai pajak — kalkulator ini menerapkan pajak 0 pada kondisi itu. Yield efektif = bunga bersih ÷ pokok, disetahunkan, agar perbandingan antar-tenor adil.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Apakah pajak deposito dilaporkan lagi di SPT?</summary><p>PPh-nya bersifat final, jadi bunga deposito tidak digabung dengan penghasilan lain; cukup dilaporkan sebagai penghasilan yang dikenai pajak final dan harta di SPT.</p></details>
+<details><summary>Bunga di iklan bank 5,5% — kenapa diterima kurang?</summary><p>Karena angka iklan adalah bunga bruto sebelum PPh final 20%. Bandingkan selalu angka bersihnya.</p></details>
+<details><summary>Apakah deposito dijamin LPS?</summary><p>Simpanan yang memenuhi syarat dijamin LPS sampai batas dan syarat yang berlaku (termasuk bunga tidak melebihi tingkat bunga penjaminan LPS). Periksa status terkini di bank/LPS.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Bunga Majemuk — Simulasi Investasi & Tabungan | HitungUang</title>
+<meta name="description" content="Simulasikan pertumbuhan modal awal dan setoran bulanan dengan bunga majemuk: lihat nilai akhir, total setoran, total bunga, dan ringkasan per tahun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Bunga Majemuk</p>
+  <div class="page-head"><h1>Kalkulator Bunga Majemuk</h1><p>Bunga majemuk membuat bunga Anda ikut menghasilkan bunga. Simulasikan berapa modal dan setoran rutin Anda bertumbuh dalam beberapa tahun — dengan asumsi return tetap yang Anda tentukan sendiri.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form id="form-bunga-majemuk" onsubmit="return false">
+<div class="field"><label for="maj-modal">Modal awal (Rp)</label><input type="number" id="maj-modal" value="10000000" ></div>
+<div class="field"><label for="maj-setoran">Setoran rutin per bulan (Rp)</label><input type="number" id="maj-setoran" value="1000000" ></div>
+<div class="field"><label for="maj-return">Perkiraan return (% per tahun)</label><input type="number" id="maj-return" value="6" ><p class="hint">step="0.01"</p></div>
+<div class="field"><label for="maj-tahun">Durasi (tahun)</label><input type="number" id="maj-tahun" value="10" ></div>
+<button class="btn" type="button" id="maj-hitung">Hitung</button></form></div>
+<div class="result" id="maj-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose" style="max-width:none"><h2>Ringkasan tahunan</h2><div class="table-scroll"><table class="ledger"><thead><tr><th>Tahun</th><th>Total setoran</th><th>Bunga kumulatif</th><th>Nilai akhir</th></tr></thead><tbody id="maj-tabel-body"></tbody></table></div></div><div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Modal awal <strong>Rp10.000.000</strong>, setoran <strong>Rp1.000.000 per bulan</strong>, return <strong>6% per tahun</strong>, selama <strong>10 tahun</strong>: nilai akhir ≈ <strong>Rp182.073.314</strong>. Uang yang Anda setor total Rp130.000.000, jadi pertumbuhan dari bunga ≈ Rp52.073.314 — lebih dari sepertiga hasil akhir datang dari bunga, bukan setoran.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Nilai akhir = Modal × (1+r)<sup>n</sup> + Setoran × (((1+r)<sup>n</sup> − 1) ÷ r)</div><p>r = return bulanan (return tahunan ÷ 100 ÷ 12) dan n = jumlah bulan. Setoran diasumsikan masuk di akhir setiap bulan. Return di dunia nyata tidak tetap dan tidak dijamin — naik-turun pasar, biaya, dan pajak dapat membuat hasil aktual berbeda jauh dari simulasi garis lurus ini.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Apakah return 6% itu realistis?</summary><p>Itu hanya contoh asumsi. Deposito umumnya lebih rendah, instrumen pasar bisa lebih tinggi tetapi berfluktuasi dan berisiko. Isi asumsi konservatif agar tidak kecewa.</p></details>
+<details><summary>Kenapa hasil tahun-tahun terakhir tumbuh lebih cepat?</summary><p>Itulah efek majemuk: basis yang dibungakan makin besar karena bunga tahun sebelumnya ikut bekerja.</p></details>
+<details><summary>Apakah simulasi ini janji keuntungan?</summary><p>Bukan. Ini alat edukasi dengan asumsi return tetap; bukan rekomendasi produk investasi apa pun.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

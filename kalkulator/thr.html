@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator THR — Hitung Tunjangan Hari Raya | HitungUang</title>
+<meta name="description" content="Hitung THR sesuai Permenaker 6/2016: masa kerja 12 bulan atau lebih mendapat 1× upah, di bawah itu proporsional masa kerja dibagi 12 kali upah sebulan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator THR</p>
+  <div class="page-head"><h1>Kalkulator THR</h1><p>Cek perkiraan Tunjangan Hari Raya Anda berdasarkan upah sebulan dan masa kerja, mengikuti aturan proporsional Permenaker Nomor 6 Tahun 2016.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form id="form-thr" onsubmit="return false">
+<div class="field"><label for="thr-upah">Upah sebulan — gaji pokok + tunjangan tetap (Rp)</label><input type="number" id="thr-upah" value="6000000" ></div>
+<div class="field"><label for="thr-masa">Masa kerja (bulan)</label><input type="number" id="thr-masa" value="6" ></div>
+<button class="btn" type="button" id="thr-hitung">Hitung</button></form></div>
+<div class="result" id="thr-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Upah sebulan <strong>Rp6.000.000</strong> dengan masa kerja <strong>6 bulan</strong>: THR = 6/12 × Rp6.000.000 = <strong>Rp3.000.000</strong>. Bila masa kerjanya 12 bulan atau lebih, THR-nya penuh Rp6.000.000.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>THR = (masa kerja ÷ 12) × upah sebulan &nbsp;·&nbsp; masa kerja ≥ 12 bulan → 1 × upah sebulan</div><p>Menurut Permenaker 6/2016, pekerja dengan masa kerja minimal 1 bulan berhak atas THR: 12 bulan atau lebih mendapat 1× upah sebulan; 1 sampai kurang dari 12 bulan dihitung proporsional. Upah sebulan = gaji pokok + tunjangan tetap (tunjangan tidak tetap seperti transport/uang makan harian umumnya tidak termasuk). Di bawah 1 bulan, belum berhak.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Kapan THR wajib dibayarkan?</summary><p>Paling lambat 7 hari sebelum hari raya keagamaan pekerja, menurut Permenaker 6/2016.</p></details>
+<details><summary>Apakah THR kena pajak?</summary><p>Ya, THR adalah objek PPh 21 — jumlah yang diterima bersih dapat lebih kecil setelah dipotong pajak oleh pemberi kerja. Kalkulator ini menampilkan THR kotor.</p></details>
+<details><summary>Saya pekerja harian/kontrak, apakah berhak?</summary><p>Pada prinsipnya ya, selama hubungan kerja berjalan dan masa kerja memenuhi syarat; besaran mengikuti aturan proporsional dan ketentuan perjanjian/perusahaan. Periksa PK/PP/PKB tempat Anda bekerja.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

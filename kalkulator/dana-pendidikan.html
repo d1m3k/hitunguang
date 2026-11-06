@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Dana Pendidikan Anak — Dengan Inflasi Biaya | HitungUang</title>
+<meta name="description" content="Perkirakan biaya pendidikan anak di masa depan dengan inflasi biaya pendidikan, lalu hitung setoran bulanan dari sekarang sampai anak masuk sekolah/kuliah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Dana Pendidikan</p>
+  <div class="page-head"><h1>Kalkulator Dana Pendidikan</h1><p>Biaya pendidikan naik jauh lebih cepat dari inflasi umum. Hitung berapa biaya masuk sekolah/kuliah anak Anda nanti, dan setoran bulanan untuk menyiapkannya dari sekarang.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="pen-biaya">Biaya pendidikan target saat ini (Rp)</label><input type="number" id="pen-biaya" value="100000000" step="any"></div>
+<div class="field"><label for="pen-usia">Usia anak sekarang (tahun)</label><input type="number" id="pen-usia" value="5" step="any"></div>
+<div class="field"><label for="pen-masuk">Usia anak saat masuk (tahun)</label><input type="number" id="pen-masuk" value="18" step="any"></div>
+<div class="field"><label for="pen-inflasi">Inflasi biaya pendidikan (% per tahun)</label><input type="number" id="pen-inflasi" value="8" step="any"></div>
+<div class="field"><label for="pen-return">Asumsi return investasi (% per tahun)</label><input type="number" id="pen-return" value="6" step="any"></div>
+<button class="btn" type="button" id="pen-hitung">Hitung</button></form></div>
+<div class="result" id="pen-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Biaya kuliah target hari ini <strong>Rp100.000.000</strong>, anak usia 5 tahun masuk usia 18 (13 tahun lagi), inflasi pendidikan 8%/tahun: biaya saat masuk ≈ Rp100.000.000 × 1,08<sup>13</sup> = <strong>Rp271.962.373</strong>. Dengan return 6%/tahun, setoran yang dibutuhkan ≈ <strong>Rp1.155.088 per bulan</strong> selama 156 bulan.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Biaya masa depan = Biaya kini × (1 + inflasi)<sup>tahun</sup> · lalu dihitung setoran bulanannya seperti tujuan keuangan</div><p>Default inflasi pendidikan 8%/tahun mencerminkan kenaikan uang pangkal dan SPP yang secara historis sering dikutip di kisaran 8–15% — jauh di atas inflasi umum — dan dapat Anda ubah. Kalkulator ini menyiapkan biaya masuk/awal; biaya per semester berjalan setelah anak masuk perlu perencanaan terpisah.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Kenapa inflasi pendidikan begitu tinggi?</summary><p>Kenaikan biaya sekolah dan universitas didorong biaya operasional dan permintaan; angka pastinya berbeda per institusi. Itulah sebabnya kolom inflasi di sini dapat diubah.</p></details>
+<details><summary>Mulai dari anak usia berapa sebaiknya?</summary><p>Sedini mungkin. Menunda 5 tahun dengan target yang sama dapat menggandakan setoran bulanan yang dibutuhkan.</p></details>
+<details><summary>Instrumen apa yang cocok?</summary><p>Di luar lingkup kalkulator ini — sesuaikan horizon waktu dan profil risiko, dan pertimbangkan berkonsultasi dengan perencana keuangan berlisensi.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

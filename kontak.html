@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontak HitungUang — Halaman Contoh (Demo) | HitungUang</title>
+<meta name="description" content="Kontak HitungUang (halaman contoh pada versi demo): formulir contoh yang tidak mengirim data, dan alamat email contoh halo@hitunguang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="index.html">Beranda</a><a href="index.html#kalkulator">Kalkulator</a><a href="index.html#panduan">Panduan</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a></nav>
+</div></header>
+<main><div class="wrap">
+  <div class="page-head"><h1>Kontak</h1><p>Halaman contoh (demo) — formulir di sini tidak mengirim apa pun.</p></div>
+  <div class="prose">
+<div class="note"><strong>Halaman contoh (demo).</strong> Formulir di halaman ini adalah contoh tampilan antarmuka: pada versi demo ini formulir <em>tidak mengirim apa pun</em> ke server mana pun, sejalan dengan prinsip privasi situs ini.</div>
+<h2>Hubungi kami</h2>
+<p>Untuk koreksi angka/rumus, saran kalkulator baru, atau pertanyaan seputar situs ini, saluran contoh yang dipakai versi demo adalah email <strong>halo@hitunguang</strong> (alamat contoh/placeholder pada versi demo ini — belum merupakan kotak surat aktif yang dipantau).</p>
+<form onsubmit="return false" class="panel" style="box-shadow:none">
+<div class="field"><label for="kon-nama">Nama</label><input type="text" id="kon-nama" placeholder="Nama Anda"></div>
+<div class="field"><label for="kon-email">Email</label><input type="text" id="kon-email" placeholder="email@contoh.id"></div>
+<div class="field"><label for="kon-pesan">Pesan</label><input type="text" id="kon-pesan" placeholder="Tulis pesan Anda (contoh UI — tidak terkirim pada demo ini)"></div>
+<button class="btn" type="button" onclick="document.getElementById('kon-note').textContent='Ini versi demo: pesan tidak dikirim. Gunakan alamat email contoh di atas.'">Kirim pesan</button>
+<p id="kon-note" aria-live="polite" style="margin-top:12px"></p>
+</form>
+<h2>Koreksi perhitungan</h2>
+<p>Bila melaporkan dugaan kesalahan hitung, sebutkan halaman kalkulatornya, angka yang Anda masukkan, hasil yang tampil, dan hasil yang menurut Anda benar beserta sumbernya. Laporan seperti itu yang paling cepat kami tindaklanjuti pada versi produksi.</p>
+  </div>
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="index.html">Beranda</a><a href="tentang.html">Tentang &amp; Metodologi</a><a href="privasi.html">Privasi</a><a href="disclaimer.html">Disclaimer</a><a href="kontak.html">Kontak</a></nav>
+  <p class="disc">Disclaimer: HitungUang adalah alat bantu hitung dan bahan edukasi, bukan nasihat finansial, investasi, pajak, atau hukum profesional, dan bukan pengganti perhitungan resmi bank, pemberi kerja, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

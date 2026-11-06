@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Gaji Bersih — PPh 21 & BPJS 2026 | HitungUang</title>
+<meta name="description" content="Perkirakan gaji bersih (take-home pay) per bulan setelah PPh 21 dan iuran BPJS Kesehatan, JHT, dan JP berdasarkan status PTKP Anda. Estimasi disetahunkan, dijelaskan terbuka.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Gaji Bersih</p>
+  <div class="page-head"><h1>Kalkulator Gaji Bersih</h1><p>Perkirakan berapa gaji yang benar-benar masuk rekening setelah potongan PPh 21 dan BPJS — berguna saat menilai tawaran kerja atau memeriksa slip gaji.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form id="form-gaji-bersih" onsubmit="return false">
+<div class="field"><label for="gaji-kotor">Gaji kotor / bruto per bulan (Rp)</label><input type="number" id="gaji-kotor" value="10000000" ></div>
+<div class="field"><label for="gaji-status">Status PTKP</label><select id="gaji-status"><option value="TK/0" selected>TK/0 — tidak kawin, 0 tanggungan</option><option value="TK/1">TK/1 — tidak kawin, 1 tanggungan</option><option value="TK/2">TK/2 — tidak kawin, 2 tanggungan</option><option value="TK/3">TK/3 — tidak kawin, 3 tanggungan</option><option value="K/0">K/0 — kawin, 0 tanggungan</option><option value="K/1">K/1 — kawin, 1 tanggungan</option><option value="K/2">K/2 — kawin, 2 tanggungan</option><option value="K/3">K/3 — kawin, 3 tanggungan</option></select><p class="hint">TK = tidak kawin, K = kawin; angka = jumlah tanggungan (maksimal 3 yang dihitung).</p></div><div class="field"><label class="check"><input type="checkbox" id="gaji-bpjs" checked><span>Ikut BPJS (potong iuran karyawan Kesehatan, JHT, dan JP)</span></label></div><button class="btn" type="button" id="gaji-hitung">Hitung</button></form></div>
+<div class="result" id="gaji-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div style="margin-top:20px" class="note warn"><strong>Penting — baca sebelum memakai angka ini:</strong> kalkulator ini adalah <strong>estimasi dengan metode disetahunkan</strong> (PPh setahun dibagi 12). Pemotongan resmi oleh pemberi kerja pada <strong>Januari–November memakai Tarif Efektif Rata-rata (TER) menurut PP 58/2023</strong>, lalu <strong>direkonsiliasi pada Desember</strong> dengan tarif progresif biasa — sehingga total PPh setahun kurang lebih sama, tetapi potongan per bulan Jan–Nov dapat berbeda dari hasil kalkulator ini. Hasil ini <strong>bukan pengganti slip gaji atau perhitungan payroll resmi</strong>.</div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Gaji kotor <strong>Rp10.000.000 per bulan</strong>, status <strong>TK/0</strong>, ikut BPJS. Bruto setahun Rp120.000.000; biaya jabatan 5% = Rp6.000.000 (pas di batas maksimal); iuran JHT+JP karyawan setahun Rp3.600.000. Penghasilan neto Rp110.400.000 − PTKP Rp54.000.000 = PKP Rp56.400.000. PPh setahun 5% × Rp56.400.000 = <strong>Rp2.820.000</strong> (Rp235.000/bulan). Potongan BPJS per bulan Rp400.000 (Kesehatan Rp100.000 + JHT Rp200.000 + JP Rp100.000). Gaji bersih ≈ <strong>Rp9.365.000 per bulan</strong>.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>PKP = Bruto setahun − Biaya jabatan − Iuran JHT &amp; JP karyawan − PTKP</div><p><strong>Konstanta yang dipakai (2026):</strong> PTKP dasar Rp54.000.000/tahun, tambah Rp4.500.000 bila kawin dan Rp4.500.000 per tanggungan (maksimal 3). Biaya jabatan 5% dari bruto, maksimal Rp6.000.000/tahun. Iuran karyawan: BPJS Kesehatan 1% dari upah (upah maksimal yang dihitung Rp12.000.000), JHT 2% tanpa batas, JP 1% dari upah (maksimal Rp11.086.300, berlaku sejak Maret 2026). PKP dibulatkan ke bawah ke ribuan penuh, lalu dikenai tarif progresif UU HPP: 5% sampai Rp60 juta, 15% Rp60–250 juta, 25% Rp250–500 juta, 30% Rp500 juta–5 miliar, 35% di atas Rp5 miliar. PPh bulanan pada kalkulator ini = PPh setahun ÷ 12.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Kenapa potongan di slip gaji saya berbeda?</summary><p>Karena Jan–Nov pemberi kerja wajib memakai skema TER (PP 58/2023), bukan setahun-dibagi-12. Selisihnya diselesaikan pada pemotongan Desember, jadi bandingkan total setahun, bukan satu bulan.</p></details>
+<details><summary>Apakah tunjangan dan bonus dihitung?</summary><p>Di perhitungan nyata, penghasilan teratur dan tidak teratur (bonus/THR) ikut menjadi objek PPh dan sebagian BPJS. Kalkulator ini menyederhanakan pada gaji bulanan tetap saja.</p></details>
+<details><summary>Apakah iuran BPJS Kesehatan mengurangi pajak?</summary><p>Tidak dalam perhitungan ini — yang mengurangi penghasilan bruto untuk PPh adalah biaya jabatan serta iuran JHT dan JP yang dibayar karyawan, sesuai ketentuan yang berlaku.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Lembur — Upah Lembur per Jam 1/173 | HitungUang</title>
+<meta name="description" content="Hitung upah lembur sesuai Kepmenakertrans 102/2004: upah sejam 1/173 upah sebulan, pengali 1,5×–4× menurut jenis hari dan urutan jam lembur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Lembur</p>
+  <div class="page-head"><h1>Kalkulator Upah Lembur</h1><p>Lembur bukan sekadar jam tambahan — pengalinya berbeda untuk jam pertama, jam berikutnya, dan hari libur. Hitung hak lembur Anda per kelompok jam.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="lem-upah">Upah sebulan (Rp)</label><input type="number" id="lem-upah" value="6000000" step="any"></div>
+<div class="field"><label for="lem-jenis">Jenis hari lembur</label><select id="lem-jenis"><option value="kerja" selected>Hari kerja biasa</option><option value="libur5">Hari libur resmi / istirahat mingguan — pola 5 hari kerja</option><option value="libur6">Hari libur resmi / istirahat mingguan — pola 6 hari kerja</option></select></div><div class="field"><label for="lem-jam">Jumlah jam lembur</label><input type="number" id="lem-jam" value="3" step="any"></div>
+<button class="btn" type="button" id="lem-hitung">Hitung</button></form></div>
+<div class="result" id="lem-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Upah <strong>Rp6.000.000</strong>, lembur <strong>3 jam di hari kerja</strong>: upah sejam = Rp6.000.000 ÷ 173 = <strong>Rp34.682,09</strong>. Jam pertama 1,5× = Rp52.023,12; dua jam berikutnya 2× = Rp138.728,32. Total lembur ≈ <strong>Rp190.751</strong>.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Upah sejam = 1/173 × upah sebulan (Kepmenakertrans 102/2004)</div><p><strong>Hari kerja:</strong> jam pertama dibayar 1,5× upah sejam, jam berikutnya 2×. <strong>Hari libur/istirahat mingguan, pola 5 hari kerja:</strong> 8 jam pertama 2×, jam ke-9 3×, jam ke-10 dan ke-11 4×. <strong>Pola 6 hari kerja:</strong> 7 jam pertama 2×, jam ke-8 3×, jam ke-9 dan ke-10 4×. Jam di luar kelompok tarif tersebut tidak dihitung kalkulator ini.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Kenapa pembaginya 173?</summary><p>Angka 173 adalah pembagi baku upah sejam menurut Kepmenakertrans 102/MEN/VI/2004, turunan dari rata-rata jam kerja sebulan.</p></details>
+<details><summary>Upah sebulan yang dipakai yang mana?</summary><p>Upah yang menjadi dasar lembur umumnya gaji pokok ditambah tunjangan tetap, dengan ketentuan komponen minimal menurut peraturan. Kalkulator ini memakai angka yang Anda masukkan.</p></details>
+<details><summary>Apakah lembur ada batas maksimalnya?</summary><p>Ada batas jam lembur per hari dan per minggu menurut peraturan ketenagakerjaan yang berlaku, dan lembur umumnya harus atas perintah serta persetujuan. Periksa aturan terbaru dan perjanjian kerja Anda.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

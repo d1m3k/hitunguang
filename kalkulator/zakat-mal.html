@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Zakat Mal — Zakat Harta & Tabungan | HitungUang</title>
+<meta name="description" content="Hitung zakat mal 2,5%: nisab 85 gram emas dikali harga emas yang Anda masukkan, total harta bersih setelah utang jatuh tempo, dan status wajib atau belum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Zakat Mal</p>
+  <div class="page-head"><h1>Kalkulator Zakat Mal</h1><p>Zakat mal dikenakan pada harta yang mencapai nisab 85 gram emas dan telah dimiliki selama haul (satu tahun hijriah). Hitung harta bersih dan zakat Anda di sini.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="mal-tabungan">Total tabungan & uang tunai (Rp)</label><input type="number" id="mal-tabungan" value="150000000" step="any"></div>
+<div class="field"><label for="mal-emas">Nilai emas & perhiasan yang dizakati (Rp)</label><input type="number" id="mal-emas" value="20000000" step="any"></div>
+<div class="field"><label for="mal-lain">Aset lain yang dizakati — stok dagang, piutang lancar, dll. (Rp)</label><input type="number" id="mal-lain" value="10000000" step="any"></div>
+<div class="field"><label for="mal-utang">Utang jatuh tempo yang mengurangi (Rp)</label><input type="number" id="mal-utang" value="5000000" step="any"></div>
+<div class="field"><label for="mal-harga-emas">Harga emas per gram (Rp) — dapat diubah</label><input type="number" id="mal-harga-emas" value="1500000" step="any"></div>
+<button class="btn" type="button" id="mal-hitung">Hitung</button></form></div>
+<div class="result" id="mal-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Tabungan Rp150.000.000 + emas Rp20.000.000 + aset lain Rp10.000.000 − utang Rp5.000.000 = harta bersih <strong>Rp175.000.000</strong>. Dengan harga emas Rp1.500.000/gram, nisab = 85 × Rp1.500.000 = Rp127.500.000. Harta bersih di atas nisab, jadi zakat mal = 2,5% × Rp175.000.000 = <strong>Rp4.375.000</strong>.</p></div>
+<h2>Penjelasan rumus</h2><div class='formula'>Nisab = 85 gram × harga emas per gram · Zakat = 2,5% × (total harta − utang jatuh tempo)</div><p>Syarat zakat mal: harta milik penuh, mencapai nisab, dan berlalu haul (satu tahun hijriah kepemilikan pada kadar nisab). Kalkulator ini memeriksa kadar nisab dari angka yang Anda masukkan; penilaian haul dan jenis aset yang wajib dizakati (misalnya perhiasan yang dipakai vs disimpan) mengikuti pendapat/amil yang Anda percayai. Harga emas berubah setiap hari — perbarui kolom harga emas saat menghitung.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Apa bedanya dengan zakat penghasilan?</summary><p>Zakat penghasilan dikenakan pada pendapatan saat diterima bila mencapai nisab bulanan/tahunan; zakat mal dikenakan pada stok harta yang tersimpan dan telah haul. Sebagian harta dapat terkait keduanya menurut pendapat yang Anda ikuti — lihat halaman Zakat Penghasilan untuk sisi pendapatan.</p></details>
+<details><summary>Apakah rumah dan kendaraan yang dipakai ikut dihitung?</summary><p>Umumnya aset yang dipakai untuk kebutuhan hidup (rumah tinggal, kendaraan pribadi) tidak dizakati; yang dihitung adalah harta simpanan dan aset produktif/dagangan. Kalkulator mengikuti angka yang Anda masukkan sebagai aset yang dizakati.</p></details>
+<details><summary>Harga emas yang dipakai harga jual atau beli kembali?</summary><p>Pendapat berbeda-beda; praktik umum memakai harga emas saat zakat ditunaikan. Karena kolomnya dapat diubah, sesuaikan dengan rujukan amil Anda.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

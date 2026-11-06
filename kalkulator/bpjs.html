@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Iuran BPJS — Rincian Karyawan & Perusahaan | HitungUang</title>
+<meta name="description" content="Rincikan iuran BPJS Kesehatan dan Ketenagakerjaan dari upah bulanan: bagian yang dipotong dari karyawan dan bagian yang dibayar perusahaan (JHT, JP, JKK, JKM).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator BPJS</p>
+  <div class="page-head"><h1>Kalkulator Rincian Iuran BPJS</h1><p>Banyak pekerja hanya melihat potongan di slip gaji, padahal perusahaan membayar iuran yang jauh lebih besar di belakang layar. Lihat kedua sisinya di sini.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="bpj-upah">Upah per bulan (Rp)</label><input type="number" id="bpj-upah" value="10000000" step="any"></div>
+<button class="btn" type="button" id="bpj-hitung">Hitung</button></form></div>
+<div class="result" id="bpj-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Upah <strong>Rp10.000.000</strong>: karyawan membayar Kesehatan Rp100.000 + JHT Rp200.000 + JP Rp100.000 = <strong>Rp400.000</strong>. Perusahaan membayar Kesehatan Rp400.000 + JHT Rp370.000 + JP Rp200.000 + JKK Rp24.000 + JKM Rp30.000 = <strong>Rp1.024.000</strong>. Total iuran sebulan Rp1.424.000.</p></div>
+<h2>Penjelasan rumus</h2><p><strong>Tarif yang dipakai:</strong> Kesehatan — karyawan 1%, perusahaan 4%, basis upah maksimal Rp12.000.000. JHT — karyawan 2%, perusahaan 3,7%, tanpa batas. JP — karyawan 1%, perusahaan 2%, basis maksimal Rp11.086.300 (sejak Maret 2026). JKK — perusahaan 0,24%–1,74% sesuai risiko pekerjaan; kalkulator ini memakai 0,24% (risiko sangat rendah) sebagai asumsi yang ditampilkan terbuka. JKM — perusahaan 0,3%.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Kenapa potongan BPJS di slip saya hanya sebagian?</summary><p>Slip gaji menampilkan bagian karyawan saja. Bagian perusahaan adalah beban pemberi kerja dan tidak mengurangi gaji Anda.</p></details>
+<details><summary>Apakah semua perusahaan membayar JKK 0,24%?</summary><p>Tidak — tarif JKK bertingkat menurut tingkat risiko lingkungan kerja (0,24% sampai 1,74%). Angka di sini asumsi terendah; cek tarif kelompok risiko perusahaan Anda.</p></details>
+<details><summary>Basis upah itu gaji pokok saja?</summary><p>Umumnya upah pokok ditambah tunjangan tetap, mengikuti definisi upah pada masing-masing program. Kalkulator ini memakai satu angka upah yang Anda masukkan.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Dana Pensiun — Target 25× & Setoran Bulanan | HitungUang</title>
+<meta name="description" content="Perkirakan kebutuhan dana pensiun dengan pendekatan aturan 25× pengeluaran tahunan, dan setoran bulanan yang dibutuhkan dari usia sekarang sampai usia pensiun Anda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">Hitung<em>Uang</em></a>
+  <nav class="main" aria-label="Utama"><a href="../index.html">Beranda</a><a href="../index.html#kalkulator">Kalkulator</a><a href="../tentang.html">Tentang</a></nav>
+</div></header>
+<main><div class="wrap">
+  <p class="crumb"><a href="../index.html">Beranda</a> › <a href="../index.html#kalkulator">Kalkulator</a> › Kalkulator Dana Pensiun</p>
+  <div class="page-head"><h1>Kalkulator Dana Pensiun</h1><p>Berapa dana yang perlu terkumpul saat Anda berhenti bekerja, dan berapa setoran bulanan untuk mencapainya? Kalkulator ini menunjukkannya dengan asumsi yang ditampilkan terbuka.</p></div>
+<div class="calc-layout"><div class="panel"><h2>Isi angka Anda</h2><form onsubmit="return false">
+<div class="field"><label for="ret-usia">Usia sekarang (tahun)</label><input type="number" id="ret-usia" value="30" step="any"></div>
+<div class="field"><label for="ret-pensiun">Usia pensiun yang dituju (tahun)</label><input type="number" id="ret-pensiun" value="55" step="any"></div>
+<div class="field"><label for="ret-pengeluaran">Pengeluaran bulanan yang diinginkan saat pensiun, nilai hari ini (Rp)</label><input type="number" id="ret-pengeluaran" value="5000000" step="any"></div>
+<div class="field"><label for="ret-inflasi">Asumsi inflasi (% per tahun)</label><input type="number" id="ret-inflasi" value="4" step="any"></div>
+<div class="field"><label for="ret-return">Asumsi return sebelum pensiun (% per tahun)</label><input type="number" id="ret-return" value="7" step="any"></div>
+<div class="field"><label for="ret-punya">Tabungan/investasi pensiun saat ini (Rp)</label><input type="number" id="ret-punya" value="50000000" step="any"></div>
+<button class="btn" type="button" id="ret-hitung">Hitung</button></form></div>
+<div class="result" id="ret-hasil" aria-live="polite"><p>Isi formulir untuk melihat hasil.</p></div></div>
+<div style="margin-top:20px" class="note warn"><strong>Asumsi yang dipakai — baca ini:</strong> target dana pensiun dihitung dengan pendekatan <strong>aturan 25× (4% rule)</strong>: dana = pengeluaran tahun pertama pensiun × 25. Ini adalah <em>rule-of-thumb</em> dari literatur perencanaan keuangan, <strong>bukan standar resmi pemerintah atau jaminan kecukupan</strong>. Umur panjang, inflasi setelah pensiun, biaya kesehatan, dan return setelah pensiun dapat membuat kebutuhan sebenarnya lebih besar atau lebih kecil.</div>
+<div class="prose"><h2>Contoh hitungan</h2><div class="example"><p>Usia 30, pensiun 55 (25 tahun), ingin pengeluaran setara <strong>Rp5.000.000/bulan nilai hari ini</strong>, inflasi 4%: pengeluaran itu saat pensiun menjadi ≈ <strong>Rp13.329.182 per bulan</strong> (Rp159.950.180 setahun). Target 25× = ≈ <strong>Rp3.998.754.497</strong>. Tabungan awal Rp50.000.000 dengan return 7% tumbuh menjadi ≈ Rp286.270.910, sehingga setoran yang dibutuhkan ≈ <strong>Rp4.582.907 per bulan</strong>.</p></div>
+<h2>Penjelasan rumus</h2><p><strong>Cara membaca kedua angka kunci:</strong> (1) <em>kebutuhan tahun pertama pensiun</em> — pengeluaran tahunan Anda dalam rupiah saat pensiun, setelah inflasi; (2) <em>dana target 25×</em> — kebutuhan tahunan itu dikali 25 mengikuti aturan 4% (gagasan bahwa penarikan ±4% per tahun dari dana awal membuat dana bertahan lama). Keduanya ditampilkan di hasil agar Anda melihat jembatan hitungnya. Setoran bulanan lalu dihitung seperti kalkulator tujuan keuangan, dikurangi pertumbuhan tabungan yang sudah Anda miliki.</p>
+</div>
+<div class="prose faq"><h2>Tanya jawab</h2><details><summary>Apakah aturan 25× pasti cukup seumur hidup?</summary><p>Tidak ada jaminan. Aturan ini rule-of-thumb dari studi penarikan portofolio di luar negeri; hasil Anda bergantung umur, inflasi, kesehatan, dan return setelah pensiun.</p></details>
+<details><summary>Apakah BPJS/JHT dan jaminan pensiun diperhitungkan?</summary><p>Tidak otomatis. Bila Anda memperkirakan menerima manfaat rutin saat pensiun, kurangi angka pengeluaran yang diinginkan sebesar perkiraan manfaat itu sebelum menghitung.</p></details>
+<details><summary>Lebih baik menaikkan setoran atau menggeser usia pensiun?</summary><p>Coba keduanya di kalkulator: menunda pensiun beberapa tahun biasanya menurunkan setoran bulanan secara tajam karena pertumbuhan bekerja lebih lama dan masa persiapan bertambah.</p></details>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <h2>HitungUang</h2>
+  <p>Kalkulator finansial Indonesia yang gratis, transparan, dan privat. <strong>Versi contoh (demo).</strong></p>
+  <nav aria-label="Kaki"><a href="../index.html">Beranda</a><a href="../tentang.html">Tentang &amp; Metodologi</a><a href="../privasi.html">Privasi</a><a href="../disclaimer.html">Disclaimer</a><a href="../kontak.html">Kontak</a><a href="../index.html#kalkulator">Semua kalkulator</a></nav>
+  <p class="disc">Disclaimer: hasil kalkulator ini adalah estimasi untuk edukasi dan bahan perbandingan, bukan nasihat finansial/pajak/hukum profesional dan bukan pengganti perhitungan resmi bank, pemberi kerja, amil zakat, atau konsultan berlisensi. Ini adalah situs demo.</p>
+  <p class="disc">© 2026 HitungUang — demo.</p>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>
